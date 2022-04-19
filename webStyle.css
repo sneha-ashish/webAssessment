@@ -1,0 +1,279 @@
+/* navigation bar */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #989898;
+}
+
+header {
+    display: flex;
+    height: 80px;
+}
+
+.titleMenu {
+    color: #9F9B9B;
+}
+
+.titleMenu span {
+    color: #01161E;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.flex-section1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(208, 205, 205);
+    height: auto;
+    width: 100%;
+    top: 64px;
+    bottom: 64px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.left-content {
+    width: 60%;
+    margin: auto;
+}
+
+.right-content {
+    align-items: center;
+    text-align: left;
+    margin-left: 24px;
+    width: 40%;
+    
+
+
+}
+
+.right-content button {
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+    width: 60%;
+    background-color: grey;
+    color: white;
+}
+
+.right-content button:hover {
+    background-color: rgb(250, 250, 250);
+    font-weight: 300;
+}
+
+/* Remove mobile icon */
+.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width:720px) {
+
+    /* Do Not Display */
+    .desktop,
+    .logo {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: bold;
+    /* padding: 15px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #4f4f4f;
+    /* padding: 15px; */
+}
+
+
+.section1-content {
+    display: flex;
+    flex-direction: column;
+    width: px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-imageSection {
+    display: flex;
+    flex-direction: row;
+    margin: 24px;
+    margin-top: 32px;
+}
+
+.main-imageSection-leftContent {
+    width: 60%;
+
+
+}
+
+.main-imageSection-rightContent {
+    flex-direction: column;
+
+
+
+}
+
+.main-imageSection-rightContent-child1 {
+    flex-direction: row;
+
+
+}
+
+.main-imageSection-rightContent-img {
+    width: 35%;
+}
+
+.main-imageSection-rightContent-text {
+    width: 65%;
+}
+
+.start-learning-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(208, 205, 205);
+}
+
+.start-learning-top h2 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.start-learning-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(208, 205, 205);
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0%;
+}
+
+.start-learning-style div {
+    flex-basis: auto;
+    margin: 10px;
+    background-color: white;
+    margin-right: 40px;
+    width: 30%;
+}
+
+.start-learning-style div img {
+    height: auto;
+    width: auto;
+}
+
+.start-learning-style div div {
+    margin: 16px;
+    width: auto;
+    line-height: normal;
+
+
+}
+
+.start-learning-style div p.lastLine {
+    /* margin-top: 22px; */
+    padding-bottom: 24px;
+    padding-left: 16px;
+}
+
+.thesis-exhibit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;
+    background-color: white;
+
+}
+
+.thesis-exhibit h2 {
+    text-align: center;
+
+}
+
+.thesis-exhibit div {
+    display: flex;
+    flex-direction: row;
+    margin-right: 24px;
+    background-color: white;
+
+}
+
+.thesis-exhibit div div {
+
+    flex-direction: column;
+    margin-right: 24px;
+    background-color: white;
+
+}
+
+.footerText{
+    display: flex;
+    margin-top: 16px;
+    margin-left: 24px;
+    width: 100%;
+}
+
+.footerText div{
+    display: flex;
+   width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24px;
+}
