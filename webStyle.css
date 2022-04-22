@@ -55,6 +55,13 @@ nav {
     margin: auto;
 }
 
+.left-content img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
 .right-content {
     align-items: center;
     text-align: left;
@@ -214,7 +221,7 @@ h5 {
 
 .start-learning-style div img {
     height: auto;
-    width: auto;
+    width: 100%;
 }
 
 .start-learning-style div div {
