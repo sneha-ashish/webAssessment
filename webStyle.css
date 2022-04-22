@@ -48,17 +48,21 @@ nav {
     bottom: 64px;
     align-items: center;
     /* justify-content: center; */
+
 }
 
 .left-content {
     width: 60%;
     margin: auto;
+    margin: 32px;
+
 }
 
 .left-content img {
     max-width: 100%;
     height: auto;
-    
+    padding-bottom: 32px;
+    padding-right: 24px;
 }
 
 
@@ -67,7 +71,7 @@ nav {
     text-align: left;
     margin-left: 24px;
     width: 40%;
-    
+
 
 
 }
@@ -92,21 +96,6 @@ nav {
 }
 
 
-@media only screen and (max-width:720px) {
-
-    /* Do Not Display */
-    .desktop,
-    .logo {
-        display: none;
-    }
-
-    .mobile {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-}
 
 
 h1 {
@@ -144,6 +133,11 @@ h5 {
 }
 
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .section1-content {
     display: flex;
     flex-direction: column;
@@ -157,35 +151,43 @@ h5 {
 .main-imageSection {
     display: flex;
     flex-direction: row;
-    margin: 24px;
     margin-top: 32px;
 }
 
 .main-imageSection-leftContent {
     width: 60%;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
-
+.main-imageSection-leftContent h2 {
+   padding-top: 32px;
+   padding-bottom: 24px;
 }
 
 .main-imageSection-rightContent {
     flex-direction: column;
-
-
-
 }
 
-.main-imageSection-rightContent-child1 {
+.main-imageSection-rightContent-child {
+    display: flex;
     flex-direction: row;
-
-
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-items: center;
 }
 
-.main-imageSection-rightContent-img {
+.main-imageSection-rightContent-child-img-wrapper {
     width: 35%;
 }
 
-.main-imageSection-rightContent-text {
-    width: 65%;
+.main-imageSection-rightContent-child-text {
+    padding: 16px;
+    width: 100%;
+    align-self: center;
 }
 
 .start-learning-top {
@@ -202,13 +204,12 @@ h5 {
 
 .start-learning-style {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     background-color: rgb(208, 205, 205);
-    padding-left: 72px;
-    padding-right: 72px;
-    margin: 0%;
+    margin-left: 72px;
+    margin-right: 72px;
 }
 
 .start-learning-style div {
@@ -216,7 +217,8 @@ h5 {
     margin: 10px;
     background-color: white;
     margin-right: 40px;
-    width: 30%;
+    flex-flow: column wrap;
+    width: 300px;
 }
 
 .start-learning-style div img {
@@ -244,43 +246,207 @@ h5 {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 24px;
     background-color: white;
 
 }
 
 .thesis-exhibit h2 {
     text-align: center;
-
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
-.thesis-exhibit div {
+
+
+.thesis-parent {
     display: flex;
     flex-direction: row;
-    margin-right: 24px;
+    padding-right: 24px;
     background-color: white;
 
 }
 
-.thesis-exhibit div div {
+.thesis-image {
+   width: 35%;
+   padding: 16px;
+}
 
+.thesis-text {
+    width: 65%;
+    align-items: center;
+    padding: 16px;
+ }
+
+ .thesis-text thesis-text-vertical {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    margin-right: 24px;
-    background-color: white;
+   
+   
+ }
 
+.thesis-left {
+    width: 60%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    background-color: white;
 }
 
-.footerText{
+.thesis-left video {
+    width: 100%;
+    padding: 24px;
+}
+
+.thesis-right {
+    width: 40%;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.thesis-right-content {
+    background-color: lightgray;
+}
+
+
+.footerText {
     display: flex;
     margin-top: 16px;
     margin-left: 24px;
-    width: 100%;
 }
 
-.footerText div{
+.footerText div {
     display: flex;
-   width: 80%;
+    width: 80%;
     justify-content: flex-end;
     align-items: center;
     margin-right: 24px;
+}
+
+/* Hide mobile images */
+.image-mobile, .start-learning-top-mobile, .thesis-parent-mobile-video{
+    display: none;
+}
+
+
+@media only screen and (max-width:720px) {
+
+    /* Do Not Display */
+    .desktop,
+    .logo {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height:64px;
+    }
+
+   
+    
+    .flex-section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .left-content img{
+        width: 100%;
+        padding:0px 0px 16px 0px;
+    }
+    .flex-section1 h4 {
+        padding-top:16px;
+        padding-bottom: 8px;
+    }
+    
+    .flex-section1 button{
+        margin-bottom: 32px;
+    }
+
+    /* main-imageSection  */
+    
+    .main-imageSection-leftContent{
+        display:none;
+    }
+    
+    .main-imageSection-rightContent-child-img-wrapper,.thesis-parent, .start-learning-top{
+        display:none;
+    }
+
+    
+    .main-imageSection-rightContent-child{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+
+    
+    .image-mobile{
+        display:flex;
+        max-width:100%;
+    
+    }
+    
+    .image-mobile img{
+        width:100%;
+        height:300px;
+        padding-left:32px;
+        padding-right: 32px;
+        padding-top:16px;
+    
+    }
+    
+    .start-learning-top-mobile{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+    .start-learning-top-mobile h2{
+        padding-top: 32px;
+        padding-bottom: 16px;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    
+    .start-learning-top-mobile button{
+        background-color: lightgrey;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
+        border: none;
+        text-align: left;
+        padding-left: 16px;
+        font-size: large;
+    }
+    
+   
+
+    .thesis-parent-mobile-video {
+        display: flex;
+    }
+    
+    .thesis-parent-mobile-video video{
+        width: 100%;
+        padding-bottom: 32px;
+    }
+    
+
+
 }
